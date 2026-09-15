@@ -1,13 +1,118 @@
-:root{--subject-color:#5eead4}
-.theme-portugues{--accent:#fb923c;--subject-color:#fb923c}
-.theme-ingles{--accent:#f472b6;--subject-color:#f472b6}
-.theme-matematica{--accent:#22d3ee;--subject-color:#22d3ee}
-.theme-fisica{--accent:#60a5fa;--subject-color:#60a5fa}
-.theme-quimica{--accent:#a78bfa;--subject-color:#a78bfa}
-.theme-biologia{--accent:#4ade80;--subject-color:#4ade80}
-.theme-historia{--accent:#e879f9;--subject-color:#e879f9}
-.theme-geografia{--accent:#818cf8;--subject-color:#818cf8}
-.theme-filosofia{--accent:#fb7185;--subject-color:#fb7185}
-.theme-sociologia{--accent:#38bdf8;--subject-color:#38bdf8}
-.theme-programacao{--accent:#fbbf24;--subject-color:#fbbf24}
-.theme-autoria-web{--accent:#f472b6;--subject-color:#f472b6}
+
+/* VETOR visual worlds — each subject has a different visual language. */
+.theme-portugues{--accent:#fb923c;--accent-rgb:251 146 60}
+.theme-ingles{--accent:#f472b6;--accent-rgb:244 114 182}
+.theme-matematica{--accent:#22d3ee;--accent-rgb:34 211 238}
+.theme-fisica{--accent:#60a5fa;--accent-rgb:96 165 250}
+.theme-quimica{--accent:#a78bfa;--accent-rgb:167 139 250}
+.theme-biologia{--accent:#4ade80;--accent-rgb:74 222 128}
+.theme-historia{--accent:#e879f9;--accent-rgb:232 121 249}
+.theme-geografia{--accent:#818cf8;--accent-rgb:129 140 248}
+.theme-filosofia{--accent:#fb7185;--accent-rgb:251 113 133}
+.theme-sociologia{--accent:#38bdf8;--accent-rgb:56 189 248}
+.theme-programacao{--accent:#fbbf24;--accent-rgb:251 191 36}
+.theme-autoria-web{--accent:#f472b6;--accent-rgb:244 114 182}
+
+/* Português — editorial / papel */
+.theme-portugues::before{
+  background-image:linear-gradient(rgb(255 255 255/.018) 1px,transparent 1px),linear-gradient(90deg,rgb(255 255 255/.018) 1px,transparent 1px);
+  background-size:32px 32px;opacity:.65
+}
+.theme-portugues .hero-art{border-radius:8px 28px 8px 28px}
+.theme-portugues .topic{border-radius:12px 22px 12px 22px}
+
+/* Inglês — comunicação / signal */
+.theme-ingles::before{
+  background-image:radial-gradient(circle at 20% 20%,rgb(var(--accent-rgb)/.10) 0 1px,transparent 2px);
+  background-size:24px 24px
+}
+.theme-ingles .hero-art{border-radius:34px 10px 34px 10px}
+.theme-ingles .topic{border-radius:22px 12px 22px 12px}
+
+/* Matemática — precisão / grid */
+.theme-matematica::before{
+  background-image:linear-gradient(rgb(var(--accent-rgb)/.06) 1px,transparent 1px),linear-gradient(90deg,rgb(var(--accent-rgb)/.06) 1px,transparent 1px);
+  background-size:42px 42px
+}
+.theme-matematica .hero-art{border-radius:10px}
+.theme-matematica .topic{border-radius:12px}
+
+/* Física — órbitas / ondas */
+.theme-fisica::before{
+  background-image:radial-gradient(ellipse at 50% 50%,transparent 0 55%,rgb(var(--accent-rgb)/.055) 55.5% 56%,transparent 56.5%);
+  background-size:210px 150px
+}
+.theme-fisica .hero-art{border-radius:50px 14px 50px 14px}
+.theme-fisica .topic{border-radius:28px}
+
+/* Química — moléculas / laboratório */
+.theme-quimica::before{
+  background-image:radial-gradient(circle at 25% 25%,rgb(var(--accent-rgb)/.10) 0 3px,transparent 4px),radial-gradient(circle at 75% 65%,rgb(var(--accent-rgb)/.07) 0 2px,transparent 3px);
+  background-size:110px 100px,150px 140px
+}
+.theme-quimica .hero-art{border-radius:26px 26px 50px 12px}
+.theme-quimica .topic{border-radius:18px 28px 18px 28px}
+
+/* Biologia — orgânico / células */
+.theme-biologia::before{
+  background-image:radial-gradient(circle at 30% 40%,rgb(var(--accent-rgb)/.08) 0 18px,transparent 19px),radial-gradient(circle at 70% 70%,rgb(var(--accent-rgb)/.055) 0 26px,transparent 27px);
+  background-size:150px 150px,220px 220px
+}
+.theme-biologia .hero-art{border-radius:60px 18px 60px 18px}
+.theme-biologia .topic{border-radius:24px 12px 24px 12px}
+
+/* História — arquivo / timeline */
+.theme-historia::before{
+  background-image:linear-gradient(90deg,transparent 0 48%,rgb(var(--accent-rgb)/.055) 48.5% 49%,transparent 49.5% 100%);
+  background-size:88px 88px
+}
+.theme-historia .hero-art{border-radius:6px 28px 6px 28px}
+.theme-historia .topic{border-radius:8px 20px 8px 20px}
+
+/* Geografia — cartografia */
+.theme-geografia::before{
+  background-image:linear-gradient(30deg,transparent 47%,rgb(var(--accent-rgb)/.055) 48%,transparent 49%),linear-gradient(-30deg,transparent 47%,rgb(var(--accent-rgb)/.045) 48%,transparent 49%);
+  background-size:80px 80px
+}
+.theme-geografia .hero-art{border-radius:48% 14px 48% 14px}
+.theme-geografia .topic{border-radius:20px 20px 6px 20px}
+
+/* Filosofia — quiet / monumental */
+.theme-filosofia::before{
+  background-image:radial-gradient(circle at 50% 0,rgb(var(--accent-rgb)/.10),transparent 36rem);
+}
+.theme-filosofia .hero-art{border-radius:50% 18px 50% 18px}
+.theme-filosofia .topic{border-radius:26px 26px 8px 8px}
+
+/* Sociologia — rede / conexões */
+.theme-sociologia::before{
+  background-image:radial-gradient(circle at 20% 20%,rgb(var(--accent-rgb)/.08) 0 2px,transparent 3px),linear-gradient(35deg,transparent 49%,rgb(var(--accent-rgb)/.04) 50%,transparent 51%);
+  background-size:90px 90px,120px 120px
+}
+.theme-sociologia .hero-art{border-radius:18px 42px 18px 42px}
+.theme-sociologia .topic{border-radius:14px 30px 14px 30px}
+
+/* Programação — terminal / code */
+.theme-programacao::before{
+  background-image:linear-gradient(rgb(var(--accent-rgb)/.035) 1px,transparent 1px),linear-gradient(90deg,rgb(var(--accent-rgb)/.035) 1px,transparent 1px);
+  background-size:26px 26px
+}
+.theme-programacao .hero-art{border-radius:8px;border-color:rgb(var(--accent-rgb)/.24)}
+.theme-programacao .topic{border-radius:8px;box-shadow:inset 0 1px rgb(255 255 255/.04)}
+.theme-programacao .topic h3,.theme-programacao .panel h2{font-family:var(--font-mono)}
+
+/* Autoria Web — browser / interface */
+.theme-autoria-web::before{
+  background-image:linear-gradient(90deg,transparent 0 94%,rgb(var(--accent-rgb)/.05) 94% 95%,transparent 95%),linear-gradient(0deg,transparent 0 94%,rgb(var(--accent-rgb)/.05) 94% 95%,transparent 95%);
+  background-size:42px 42px
+}
+.theme-autoria-web .hero-art{border-radius:18px 18px 34px 18px}
+.theme-autoria-web .topic{border-radius:18px 8px 18px 8px}
+
+/* Shared theme detail: subtle accent line */
+.theme-portugues .section-title,.theme-ingles .section-title,.theme-matematica .section-title,
+.theme-fisica .section-title,.theme-quimica .section-title,.theme-biologia .section-title,
+.theme-historia .section-title,.theme-geografia .section-title,.theme-filosofia .section-title,
+.theme-sociologia .section-title,.theme-programacao .section-title,.theme-autoria-web .section-title{
+  position:relative
+}

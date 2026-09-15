@@ -1,142 +1,89 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Início — VETOR</title>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
-
-<link href="assets/css/base.css" rel="stylesheet"/><link href="assets/css/themes.css" rel="stylesheet"/></head>
-<body class="theme-matematica">
-
-<div id="app">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#5eead4"><meta name="description" content="VETOR Estudos — plataforma de estudos para ensino médio, programação e autoria web.">
+<title>Início — VETOR Estudos</title>
+<link rel="icon" href="assets/images/vetor-mark.svg">
+<link rel="stylesheet" href="assets/css/base.css"><link rel="stylesheet" href="assets/css/themes.css">
+</head>
+<body class="home-page" data-home>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<div class="mobile-backdrop" data-menu-close></div>
+<div class="app">
 <aside class="sidebar" id="sidebar">
-<a class="brand" href="index.html">
-<div class="brand-mark">V</div>
-<div class="brand-name">VETOR<span>Plataforma de estudos</span></div>
-</a>
-<div class="nav-group">
-<a class="nav-item active" href="index.html" style="--i-color:#5eead4; --i-border:rgba(94,234,212,.4)">
-<span class="nav-ico"><svg viewbox="0 0 24 24"><path d="M4 11 12 4l8 7"></path><path d="M6 10v10h5v-6h2v6h5V10"></path></svg></span> Início
-      </a>
-</div><div class="nav-group"><div class="nav-group-label">Linguagens</div>
-<a class="nav-item" href="pages/materias/portugues/index.html" style="--i-color:#fdba74; --i-border:rgba(253,186,116,.4)">
-<span class="nav-ico"><svg viewbox="0 0 24 24"><path d="M4 5c0-1 1-2 2-2h6v18H6c-1 0-2-1-2-2Z"></path><path d="M20 5c0-1-1-2-2-2h-6v18h6c1 0 2-1 2-2Z"></path></svg></span> Português
-      </a>
-<a class="nav-item" href="pages/materias/ingles/index.html" style="--i-color:#fda4af; --i-border:rgba(253,164,175,.4)">
-<span class="nav-ico"><svg viewbox="0 0 24 24"><path d="M4 5h16v11H8l-4 4V5Z"></path><path d="M8 9h8M8 12h5"></path></svg></span> Inglês
-      </a></div><div class="nav-group"><div class="nav-group-label">Exatas</div>
-<a class="nav-item" href="pages/materias/matematica/index.html" style="--i-color:#5eead4; --i-border:rgba(94,234,212,.4)">
-<span class="nav-ico"><svg viewbox="0 0 24 24"><path d="M18 5H6l6 7-6 7h12"></path></svg></span> Matemática
-      </a>
-<a class="nav-item" href="pages/materias/fisica/index.html" style="--i-color:#7dd3fc; --i-border:rgba(125,211,252,.4)">
-<span class="nav-ico"><svg viewbox="0 0 24 24"><circle cx="12" cy="12" r="1.6"></circle><ellipse cx="12" cy="12" rx="9" ry="3.6"></ellipse><ellipse cx="12" cy="12" rx="9" ry="3.6" transform="rotate(60 12 12)"></ellipse><ellipse cx="12" cy="12" rx="9" ry="3.6" transform="rotate(120 12 12)"></ellipse></svg></span> Física
-      </a>
-<a class="nav-item" href="pages/materias/quimica/index.html" style="--i-color:#c4b5fd; --i-border:rgba(196,181,253,.4)">
-<span class="nav-ico"><svg viewbox="0 0 24 24"><path d="M9 2h6"></path><path d="M10 2v6.5L4.5 18a2 2 0 0 0 1.7 3h11.6a2 2 0 0 0 1.7-3L14 8.5V2"></path><path d="M7.5 14h9"></path></svg></span> Química
-      </a></div><div class="nav-group"><div class="nav-group-label">Biológicas</div>
-<a class="nav-item" href="pages/materias/biologia/index.html" style="--i-color:#86efac; --i-border:rgba(134,239,172,.4)">
-<span class="nav-ico"><svg viewbox="0 0 24 24"><path d="M6 3c0 5 12 5 12 10s-12 5-12 10"></path><path d="M18 3c0 5-12 5-12 10s12 5 12 10"></path><path d="M7.5 7h9M6.5 12h11M7.5 17h9"></path></svg></span> Biologia
-      </a></div><div class="nav-group"><div class="nav-group-label">Humanas</div>
-<a class="nav-item" href="pages/materias/historia/index.html" style="--i-color:#f0abfc; --i-border:rgba(240,171,252,.4)">
-<span class="nav-ico"><svg viewbox="0 0 24 24"><path d="M3 21h18"></path><path d="M4 21V10M20 21V10"></path><path d="M2 10l10-6 10 6"></path><path d="M8 21v-7M12 21v-7M16 21v-7"></path></svg></span> História
-      </a>
-<a class="nav-item" href="pages/materias/geografia/index.html" style="--i-color:#a5b4fc; --i-border:rgba(165,180,252,.4)">
-<span class="nav-ico"><svg viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18"></path><path d="M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"></path></svg></span> Geografia
-      </a>
-<a class="nav-item" href="pages/materias/filosofia/index.html" style="--i-color:#fca5a5; --i-border:rgba(252,165,165,.4)">
-<span class="nav-ico"><svg viewbox="0 0 24 24"><path d="M9 3a3 3 0 0 0-3 3v1a3 3 0 0 0-2 2.8v2.4A3 3 0 0 0 6 15v1a3 3 0 0 0 3 3"></path><path d="M15 3a3 3 0 0 1 3 3v1a3 3 0 0 1 2 2.8v2.4A3 3 0 0 1 18 15v1a3 3 0 0 1-3 3"></path><path d="M9 3v16M15 3v16"></path></svg></span> Filosofia
-      </a>
-<a class="nav-item" href="pages/materias/sociologia/index.html" style="--i-color:#93c5fd; --i-border:rgba(147,197,253,.4)">
-<span class="nav-ico"><svg viewbox="0 0 24 24"><circle cx="9" cy="8" r="3.2"></circle><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"></path><circle cx="17.5" cy="9" r="2.6"></circle><path d="M15 14.2c2.6.4 4.5 2.4 4.5 5.3"></path></svg></span> Sociologia
-      </a></div><div class="nav-group"><div class="nav-group-label">Tecnologia</div>
-<a class="nav-item" href="pages/materias/programacao/index.html" style="--i-color:#fbbf24; --i-border:rgba(251,191,36,.4)">
-<span class="nav-ico"><svg viewbox="0 0 24 24"><path d="M4 4h16v16H4Z"></path><path d="M7.5 9.5 11 12l-3.5 2.5M13 15h4"></path></svg></span> Introdução à Programação
-      </a>
-<a class="nav-item" href="pages/materias/autoria-web/index.html" style="--i-color:#f472b6; --i-border:rgba(244,114,182,.4)">
-<span class="nav-ico"><svg viewbox="0 0 24 24"><path d="m9 8-4 4 4 4"></path><path d="m15 8 4 4-4 4"></path></svg></span> Autoria Web
-      </a></div></aside>
+<a class="brand" href="index.html"><img src="assets/images/vetor-mark.svg" alt="Vetor"><span><strong>VETOR</strong><small>plataforma de estudos</small></span></a>
+<nav class="nav" aria-label="Matérias"><div class="nav-label">Linguagens</div><a class="" href="pages/materias/portugues/index.html" style="--nav-color:#fb923c"><i class="nav-dot"></i><span>Português</span></a><a class="" href="pages/materias/ingles/index.html" style="--nav-color:#f472b6"><i class="nav-dot"></i><span>Inglês</span></a><div class="nav-label">Exatas</div><a class="" href="pages/materias/matematica/index.html" style="--nav-color:#22d3ee"><i class="nav-dot"></i><span>Matemática</span></a><a class="" href="pages/materias/fisica/index.html" style="--nav-color:#60a5fa"><i class="nav-dot"></i><span>Física</span></a><a class="" href="pages/materias/quimica/index.html" style="--nav-color:#a78bfa"><i class="nav-dot"></i><span>Química</span></a><div class="nav-label">Biológicas</div><a class="" href="pages/materias/biologia/index.html" style="--nav-color:#4ade80"><i class="nav-dot"></i><span>Biologia</span></a><div class="nav-label">Humanas</div><a class="" href="pages/materias/historia/index.html" style="--nav-color:#e879f9"><i class="nav-dot"></i><span>História</span></a><a class="" href="pages/materias/geografia/index.html" style="--nav-color:#818cf8"><i class="nav-dot"></i><span>Geografia</span></a><a class="" href="pages/materias/filosofia/index.html" style="--nav-color:#fb7185"><i class="nav-dot"></i><span>Filosofia</span></a><a class="" href="pages/materias/sociologia/index.html" style="--nav-color:#38bdf8"><i class="nav-dot"></i><span>Sociologia</span></a><div class="nav-label">Tecnologia</div><a class="" href="pages/materias/programacao/index.html" style="--nav-color:#fbbf24"><i class="nav-dot"></i><span>Introdução à Programação</span></a><a class="" href="pages/materias/autoria-web/index.html" style="--nav-color:#f472b6"><i class="nav-dot"></i><span>Autoria Web</span></a></nav>
+</aside>
 <main>
-<div class="view">
-<div class="home-hero">
-<div class="eyebrow-free-tag"><span class="dot-pulse"></span> 12 trilhas de estudo disponíveis</div>
-<h1>Todo o ensino médio, programação e web em um só lugar.</h1>
-<p>Escolha uma matéria na barra lateral ou nos cartões abaixo. Cada trilha tem sua própria página, com conteúdo, tópicos-chave e curiosidades para revisão rápida.</p>
-<div class="home-stats">
-<div class="home-stat"><b>12</b><span>trilhas de estudo</span></div>
-<div class="home-stat"><b>72</b><span>tópicos cobertos</span></div>
-<div class="home-stat"><b>36</b><span>curiosidades</span></div>
+<header class="topbar"><a class="topbar-brand" href="index.html">VETOR <span>· Estudos</span></a><button class="menu-btn" data-menu aria-label="Abrir menu" aria-expanded="false">☰</button></header>
+<div class="home-shell" id="conteudo">
+<section class="home-hero">
+<div class="home-copy">
+<div class="eyebrow">VETOR ESTUDOS · ENSINO MÉDIO</div>
+<h1>Aprender fica melhor quando você sabe <span>por onde começar.</span></h1>
+<p>Escolha uma matéria, entre em um tópico e estude no seu ritmo. O VETOR organiza conteúdo visual, prática e curiosidades em uma experiência feita para funcionar bem no celular.</p>
+<div class="home-actions"><a class="home-primary" href="#materias">Explorar matérias <span>↓</span></a><a class="home-secondary" href="#continuar">Continuar estudando <span>→</span></a></div>
+<div class="home-counters"><div class="home-counter"><strong>12</strong><span>matérias</span></div><div class="home-counter"><strong>72</strong><span>tópicos</span></div><div class="home-counter"><strong>72</strong><span>ilustrações</span></div></div>
 </div>
+<div class="home-orbit" aria-hidden="true">
+<div class="orbit-ring ring-one"></div><div class="orbit-ring ring-two"></div><div class="orbit-ring ring-three"></div>
+<div class="orbit-core"><span>V</span><small>ESTUDOS</small></div>
+<div class="float-chip chip-one">HTML</div><div class="float-chip chip-two">π</div><div class="float-chip chip-three">H₂O</div><div class="float-chip chip-four">DNA</div>
 </div>
-<div class="section-label">Todas as matérias</div>
-<div class="subject-grid">
-<a class="subject-card" href="pages/materias/portugues/index.html" style="--c-color:#fdba74; --c-border:rgba(253,186,116,.4)">
-<div class="sc-ico" style="color:#fdba74"><svg viewbox="0 0 24 24"><path d="M4 5c0-1 1-2 2-2h6v18H6c-1 0-2-1-2-2Z"></path><path d="M20 5c0-1-1-2-2-2h-6v18h6c1 0 2-1 2-2Z"></path></svg></div>
-<h3>Português</h3>
-<p>6 tópicos · Linguagens</p>
-</a>
-<a class="subject-card" href="pages/materias/matematica/index.html" style="--c-color:#5eead4; --c-border:rgba(94,234,212,.4)">
-<div class="sc-ico" style="color:#5eead4"><svg viewbox="0 0 24 24"><path d="M18 5H6l6 7-6 7h12"></path></svg></div>
-<h3>Matemática</h3>
-<p>6 tópicos · Exatas</p>
-</a>
-<a class="subject-card" href="pages/materias/fisica/index.html" style="--c-color:#7dd3fc; --c-border:rgba(125,211,252,.4)">
-<div class="sc-ico" style="color:#7dd3fc"><svg viewbox="0 0 24 24"><circle cx="12" cy="12" r="1.6"></circle><ellipse cx="12" cy="12" rx="9" ry="3.6"></ellipse><ellipse cx="12" cy="12" rx="9" ry="3.6" transform="rotate(60 12 12)"></ellipse><ellipse cx="12" cy="12" rx="9" ry="3.6" transform="rotate(120 12 12)"></ellipse></svg></div>
-<h3>Física</h3>
-<p>6 tópicos · Exatas</p>
-</a>
-<a class="subject-card" href="pages/materias/quimica/index.html" style="--c-color:#c4b5fd; --c-border:rgba(196,181,253,.4)">
-<div class="sc-ico" style="color:#c4b5fd"><svg viewbox="0 0 24 24"><path d="M9 2h6"></path><path d="M10 2v6.5L4.5 18a2 2 0 0 0 1.7 3h11.6a2 2 0 0 0 1.7-3L14 8.5V2"></path><path d="M7.5 14h9"></path></svg></div>
-<h3>Química</h3>
-<p>6 tópicos · Exatas</p>
-</a>
-<a class="subject-card" href="pages/materias/biologia/index.html" style="--c-color:#86efac; --c-border:rgba(134,239,172,.4)">
-<div class="sc-ico" style="color:#86efac"><svg viewbox="0 0 24 24"><path d="M6 3c0 5 12 5 12 10s-12 5-12 10"></path><path d="M18 3c0 5-12 5-12 10s12 5 12 10"></path><path d="M7.5 7h9M6.5 12h11M7.5 17h9"></path></svg></div>
-<h3>Biologia</h3>
-<p>6 tópicos · Biológicas</p>
-</a>
-<a class="subject-card" href="pages/materias/historia/index.html" style="--c-color:#f0abfc; --c-border:rgba(240,171,252,.4)">
-<div class="sc-ico" style="color:#f0abfc"><svg viewbox="0 0 24 24"><path d="M3 21h18"></path><path d="M4 21V10M20 21V10"></path><path d="M2 10l10-6 10 6"></path><path d="M8 21v-7M12 21v-7M16 21v-7"></path></svg></div>
-<h3>História</h3>
-<p>6 tópicos · Humanas</p>
-</a>
-<a class="subject-card" href="pages/materias/geografia/index.html" style="--c-color:#a5b4fc; --c-border:rgba(165,180,252,.4)">
-<div class="sc-ico" style="color:#a5b4fc"><svg viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18"></path><path d="M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"></path></svg></div>
-<h3>Geografia</h3>
-<p>6 tópicos · Humanas</p>
-</a>
-<a class="subject-card" href="pages/materias/filosofia/index.html" style="--c-color:#fca5a5; --c-border:rgba(252,165,165,.4)">
-<div class="sc-ico" style="color:#fca5a5"><svg viewbox="0 0 24 24"><path d="M9 3a3 3 0 0 0-3 3v1a3 3 0 0 0-2 2.8v2.4A3 3 0 0 0 6 15v1a3 3 0 0 0 3 3"></path><path d="M15 3a3 3 0 0 1 3 3v1a3 3 0 0 1 2 2.8v2.4A3 3 0 0 1 18 15v1a3 3 0 0 1-3 3"></path><path d="M9 3v16M15 3v16"></path></svg></div>
-<h3>Filosofia</h3>
-<p>6 tópicos · Humanas</p>
-</a>
-<a class="subject-card" href="pages/materias/sociologia/index.html" style="--c-color:#93c5fd; --c-border:rgba(147,197,253,.4)">
-<div class="sc-ico" style="color:#93c5fd"><svg viewbox="0 0 24 24"><circle cx="9" cy="8" r="3.2"></circle><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"></path><circle cx="17.5" cy="9" r="2.6"></circle><path d="M15 14.2c2.6.4 4.5 2.4 4.5 5.3"></path></svg></div>
-<h3>Sociologia</h3>
-<p>6 tópicos · Humanas</p>
-</a>
-<a class="subject-card" href="pages/materias/ingles/index.html" style="--c-color:#fda4af; --c-border:rgba(253,164,175,.4)">
-<div class="sc-ico" style="color:#fda4af"><svg viewbox="0 0 24 24"><path d="M4 5h16v11H8l-4 4V5Z"></path><path d="M8 9h8M8 12h5"></path></svg></div>
-<h3>Inglês</h3>
-<p>6 tópicos · Linguagens</p>
-</a>
-<a class="subject-card" href="pages/materias/programacao/index.html" style="--c-color:#fbbf24; --c-border:rgba(251,191,36,.4)">
-<div class="sc-ico" style="color:#fbbf24"><svg viewbox="0 0 24 24"><path d="M4 4h16v16H4Z"></path><path d="M7.5 9.5 11 12l-3.5 2.5M13 15h4"></path></svg></div>
-<h3>Introdução à Programação</h3>
-<p>6 tópicos · Tecnologia</p>
-</a>
-<a class="subject-card" href="pages/materias/autoria-web/index.html" style="--c-color:#f472b6; --c-border:rgba(244,114,182,.4)">
-<div class="sc-ico" style="color:#f472b6"><svg viewbox="0 0 24 24"><path d="m9 8-4 4 4 4"></path><path d="m15 8 4 4-4 4"></path></svg></div>
-<h3>Autoria Web</h3>
-<p>6 tópicos · Tecnologia</p>
-</a>
+</section>
+
+<section class="home-section" id="materias" aria-labelledby="materias-title">
+<div class="home-section-head"><div><div class="section-label">01 · Escolha seu caminho</div><h2 id="materias-title">Matérias</h2></div><p>Não precisa procurar no menu. Toque diretamente na área que quer estudar.</p></div>
+<label class="subject-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 5 5"></path></svg><input id="subject-search" type="search" placeholder="Buscar matéria..." autocomplete="off"><span class="sr-only">Buscar entre as matérias</span></label>
+<div class="subject-buttons" id="subject-buttons"><a class="subject-button" href="pages/materias/portugues/index.html" data-subject-card data-search="português linguagens" style="--c:#fb923c">
+      <span class="subject-icon">Aa</span><span><b>Português</b><small>Linguagens · 6 tópicos</small></span><i aria-hidden="true">→</i>
+    </a><a class="subject-button" href="pages/materias/ingles/index.html" data-subject-card data-search="inglês linguagens" style="--c:#f472b6">
+      <span class="subject-icon">EN</span><span><b>Inglês</b><small>Linguagens · 6 tópicos</small></span><i aria-hidden="true">→</i>
+    </a><a class="subject-button" href="pages/materias/matematica/index.html" data-subject-card data-search="matemática exatas" style="--c:#22d3ee">
+      <span class="subject-icon">∑</span><span><b>Matemática</b><small>Exatas · 6 tópicos</small></span><i aria-hidden="true">→</i>
+    </a><a class="subject-button" href="pages/materias/fisica/index.html" data-subject-card data-search="física exatas" style="--c:#60a5fa">
+      <span class="subject-icon">φ</span><span><b>Física</b><small>Exatas · 6 tópicos</small></span><i aria-hidden="true">→</i>
+    </a><a class="subject-button" href="pages/materias/quimica/index.html" data-subject-card data-search="química exatas" style="--c:#a78bfa">
+      <span class="subject-icon">H₂O</span><span><b>Química</b><small>Exatas · 6 tópicos</small></span><i aria-hidden="true">→</i>
+    </a><a class="subject-button" href="pages/materias/biologia/index.html" data-subject-card data-search="biologia biológicas" style="--c:#4ade80">
+      <span class="subject-icon">DNA</span><span><b>Biologia</b><small>Biológicas · 6 tópicos</small></span><i aria-hidden="true">→</i>
+    </a><a class="subject-button" href="pages/materias/historia/index.html" data-subject-card data-search="história humanas" style="--c:#e879f9">
+      <span class="subject-icon">⌛</span><span><b>História</b><small>Humanas · 6 tópicos</small></span><i aria-hidden="true">→</i>
+    </a><a class="subject-button" href="pages/materias/geografia/index.html" data-subject-card data-search="geografia humanas" style="--c:#818cf8">
+      <span class="subject-icon">◎</span><span><b>Geografia</b><small>Humanas · 6 tópicos</small></span><i aria-hidden="true">→</i>
+    </a><a class="subject-button" href="pages/materias/filosofia/index.html" data-subject-card data-search="filosofia humanas" style="--c:#fb7185">
+      <span class="subject-icon">?</span><span><b>Filosofia</b><small>Humanas · 6 tópicos</small></span><i aria-hidden="true">→</i>
+    </a><a class="subject-button" href="pages/materias/sociologia/index.html" data-subject-card data-search="sociologia humanas" style="--c:#38bdf8">
+      <span class="subject-icon">◉</span><span><b>Sociologia</b><small>Humanas · 6 tópicos</small></span><i aria-hidden="true">→</i>
+    </a><a class="subject-button" href="pages/materias/programacao/index.html" data-subject-card data-search="programação tecnologia" style="--c:#fbbf24">
+      <span class="subject-icon"></></span><span><b>Programação</b><small>Tecnologia · 6 tópicos</small></span><i aria-hidden="true">→</i>
+    </a><a class="subject-button" href="pages/materias/autoria-web/index.html" data-subject-card data-search="autoria web tecnologia" style="--c:#f472b6">
+      <span class="subject-icon">< ></span><span><b>Autoria Web</b><small>Tecnologia · 6 tópicos</small></span><i aria-hidden="true">→</i>
+    </a></div>
+<p id="search-empty" hidden style="color:var(--muted);font-size:12px;padding:15px 0">Nenhuma matéria encontrada. Tente outro termo.</p>
+</section>
+
+<section class="home-section" id="continuar" aria-labelledby="continuar-title">
+<div class="home-section-head"><div><div class="section-label">02 · Retome quando quiser</div><h2 id="continuar-title">Seu estudo</h2></div><p>O progresso é salvo localmente neste dispositivo.</p></div>
+<div class="home-dashboard">
+<article class="home-card" id="continue-card"><div class="home-card-kicker">CONTINUAR</div><h3>Pronto para a próxima sessão?</h3><p>Quando você abrir um tópico, ele aparece aqui para facilitar a retomada.</p><a class="continue-link" id="continue-link" href="pages/materias/matematica/topico-1.html"><img class="continue-thumb" id="continue-thumb" src="assets/images/matematica/topico-1.svg" alt=""><span><b id="continue-title">Matemática · Álgebra</b><small id="continue-meta">Começar do primeiro tópico</small></span><span class="continue-arrow">→</span></a></article>
+<article class="home-card daily-fact"><div><div class="home-card-kicker">CURIOSIDADE DO DIA</div><div class="fact-mark">?</div><div class="fact-meta" id="fact-meta">VETOR · DESCOBERTA</div><h3 class="fact-title" id="fact-title">Carregando...</h3><p class="fact-text" id="fact-text">Uma pequena descoberta para alimentar a curiosidade.</p></div><a class="btn" id="fact-link" href="pages/materias/matematica/index.html" style="margin-top:18px;width:max-content">Explorar matéria →</a></article>
 </div>
+</section>
+
+<section class="home-section" aria-labelledby="progresso-title">
+<div class="home-section-head"><div><div class="section-label">03 · Visão geral</div><h2 id="progresso-title">Seu progresso</h2></div><p>Veja quanto da trilha você já concluiu neste dispositivo.</p></div>
+<div class="home-card">
+<div class="stat-grid"><div class="mini-stat"><b id="stat-completed">0</b><span>tópicos concluídos</span></div><div class="mini-stat"><b id="stat-subjects">0</b><span>matérias iniciadas</span></div><div class="mini-stat"><b id="stat-percent">0%</b><span>da plataforma</span></div></div>
+<div class="progress-wrap" style="max-width:none;margin-top:18px"><div class="progress-head"><span>72 tópicos</span><strong id="home-progress-label">0%</strong></div><div class="progress-track" role="progressbar" aria-label="Progresso geral" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-bar" id="home-progress-bar"></div></div></div>
 </div>
-<footer class="site-footer">VETOR — plataforma de estudos em HTML, CSS e JavaScript. Conteúdo de referência para revisão do ensino médio, lógica de programação e autoria web.</footer>
+<div class="challenge"><div><div class="home-card-kicker">DESAFIO LEVE</div><h3>Complete 1 tópico hoje.</h3><p>Uma pequena meta é mais fácil de começar. Escolha uma matéria e faça uma sessão curta.</p></div><div class="challenge-badge">01<br>TÓPICO</div></div>
+</section>
+</div>
+<footer class="site-footer">VETOR — plataforma de estudos para ensino médio, programação e autoria web.</footer>
 </main>
 </div>
-
-<script src="assets/js/app.js"></script></body>
-</html>
+<script>window.VETOR_FACTS=[{"slug": "portugues", "name": "Português", "title": "Origem do português", "text": "O português se desenvolveu a partir do latim vulgar e ganhou formas próprias na Península Ibérica.", "tag": "LINGUAGEM", "img": "assets/images/portugues/topico-1.svg"}, {"slug": "ingles", "name": "Inglês", "title": "Uma língua global", "text": "O inglês é usado internacionalmente em ciência, tecnologia, negócios, turismo e entretenimento.", "tag": "LANGUAGE", "img": "assets/images/ingles/topico-1.svg"}, {"slug": "matematica", "name": "Matemática", "title": "O número de ouro", "text": "A razão áurea é aproximadamente 1,618 e aparece em várias construções matemáticas e algumas composições artísticas.", "tag": "NÚMEROS", "img": "assets/images/matematica/topico-1.svg"}, {"slug": "fisica", "name": "Física", "title": "Velocidade da luz", "text": "No vácuo, a luz viaja a aproximadamente 299.792 km/s, uma constante fundamental da física.", "tag": "UNIVERSO", "img": "assets/images/fisica/topico-1.svg"}, {"slug": "quimica", "name": "Química", "title": "Elementos sintéticos", "text": "Elementos muito pesados, como o oganessônio, podem ser produzidos em laboratório e têm núcleos extremamente instáveis.", "tag": "ELEMENTOS", "img": "assets/images/quimica/topico-1.svg"}, {"slug": "biologia", "name": "Biologia", "title": "DNA humano", "text": "O DNA de duas pessoas é extremamente semelhante; as pequenas diferenças ajudam a explicar parte da diversidade biológica.", "tag": "GENÉTICA", "img": "assets/images/biologia/topico-1.svg"}, {"slug": "historia", "name": "História", "title": "Alexandria", "text": "A Biblioteca de Alexandria foi um importante centro de produção e preservação de conhecimento no mundo antigo.", "tag": "ANTIGUIDADE", "img": "assets/images/historia/topico-1.svg"}, {"slug": "geografia", "name": "Geografia", "title": "Amazônia", "text": "A Floresta Amazônica é uma das maiores áreas de floresta tropical do planeta e possui enorme diversidade de espécies.", "tag": "BIOMAS", "img": "assets/images/geografia/topico-1.svg"}, {"slug": "filosofia", "name": "Filosofia", "title": "Sócrates", "text": "A tradição filosófica associa Sócrates ao diálogo e à investigação crítica das próprias certezas.", "tag": "ANTIGA", "img": "assets/images/filosofia/topico-1.svg"}, {"slug": "sociologia", "name": "Sociologia", "title": "Comte e o termo", "text": "Auguste Comte usou o termo sociologia no século XIX ao defender o estudo sistemático da sociedade.", "tag": "ORIGENS", "img": "assets/images/sociologia/topico-1.svg"}, {"slug": "programacao", "name": "Programação", "title": "Ada Lovelace", "text": "Ada Lovelace é frequentemente reconhecida por descrever um algoritmo destinado à máquina analítica no século XIX.", "tag": "HISTÓRIA", "img": "assets/images/programacao/topico-1.svg"}, {"slug": "autoria-web", "name": "Autoria Web", "title": "A Web nasceu no CERN", "text": "Tim Berners-Lee propôs a World Wide Web em 1989 enquanto trabalhava no CERN.", "tag": "WEB", "img": "assets/images/autoria-web/topico-1.svg"}];</script>
+<script src="assets/js/app.js"></script>
+</body></html>

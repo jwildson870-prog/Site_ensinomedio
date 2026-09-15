@@ -1,16 +1,50 @@
-# VETOR Estudos — estrutura reorganizada
+# VETOR Estudos
 
-## Organização
-- `index.html` — entrada da plataforma
-- `pages/materias/<materia>/index.html` — página principal da matéria
-- `pages/materias/<materia>/topico-1.html` ... `topico-6.html` — uma subpágina por tópico
-- `assets/css/base.css` — sistema visual, responsividade, acessibilidade e componentes
-- `assets/css/themes.css` — identidade de cor por matéria
-- `assets/js/app.js` — menu mobile e carrosséis
-- `assets/images/<materia>/` — ilustrações específicas de cada conteúdo
+Plataforma estática de estudos para ensino médio, programação e autoria web.
 
-## Direção de design
-A interface foi reorganizada com foco em hierarquia visual, movimento com propósito, estados de interação, acessibilidade, performance e experiência mobile. A base é compartilhada para manter consistência, mas cada matéria recebe cor, atmosfera, ilustrações e linguagem visual próprias.
+## O que esta versão traz
 
-## Carrosséis
-Todas as matérias possuem carrossel de curiosidades. As imagens são locais em SVG, então o site não depende de um serviço externo de imagens para carregar a interface.
+- 12 matérias, cada uma com 6 tópicos dedicados.
+- Identidade visual própria por matéria: editorial, comunicação, grid matemático, ondas, laboratório, orgânico, arquivo, cartografia, monumental, rede, terminal e browser.
+- 6 curiosidades por matéria com ilustrações locais.
+- Home redesenhada com botões diretos para cada matéria, busca, continuidade de estudo, curiosidade do dia, progresso e desafio leve.
+- Progresso salvo em `localStorage`, sem servidor e sem envio de dados.
+- Menu lateral no desktop e drawer sobreposto no celular.
+- Microinterações com curvas e durações curtas, feedback de toque e suporte a `prefers-reduced-motion`.
+- Estrutura sem dependências de framework: HTML + CSS + JavaScript.
+- Ilustrações SVG locais para evitar dependência de imagens externas.
+
+## Estrutura
+
+```text
+/
+├── index.html
+├── assets/
+│   ├── css/
+│   │   ├── tokens.css
+│   │   ├── base.css
+│   │   └── themes.css
+│   ├── images/
+│   └── js/
+│       └── app.js
+└── pages/
+    └── materias/
+        ├── portugues/
+        ├── ingles/
+        ├── matematica/
+        ├── fisica/
+        ├── quimica/
+        ├── biologia/
+        ├── historia/
+        ├── geografia/
+        ├── filosofia/
+        ├── sociologia/
+        ├── programacao/
+        └── autoria-web/
+```
+
+## Design
+
+A interface foi construída com uma arquitetura de tokens (primitivos → semânticos → componentes), hierarquia editorial, glassmorphism contido, profundidade espacial e movimento funcional. As animações priorizam feedback, consistência espacial, `transform`/`opacity`, curvas `ease-out` fortes e redução de movimento quando solicitada pelo sistema.
+
+Não há backend nesta versão. O progresso é local ao navegador/dispositivo.
