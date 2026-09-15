@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Português — VETOR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body style="--accent:#fdba74">
+
+<canvas id="bg-canvas"></canvas>
+
+<div id="app">
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="index.html">
+      <div class="brand-mark">V</div>
+      <div class="brand-name">VETOR<span>Plataforma de estudos</span></div>
+    </a>
+    <div class="nav-group">
+      <a class="nav-item " style="--i-color:#5eead4; --i-border:rgba(94,234,212,.4)" href="index.html">
+        <span class="nav-ico"><svg viewBox="0 0 24 24"><path d="M4 11 12 4l8 7"/><path d="M6 10v10h5v-6h2v6h5V10"/></svg></span> Início
+      </a>
+    </div><div class="nav-group"><div class="nav-group-label">Linguagens</div>
+      <a class="nav-item active" style="--i-color:#fdba74; --i-border:rgba(253,186,116,.4)" href="portugues.html">
+        <span class="nav-ico"><svg viewBox="0 0 24 24"><path d="M4 5c0-1 1-2 2-2h6v18H6c-1 0-2-1-2-2Z"/><path d="M20 5c0-1-1-2-2-2h-6v18h6c1 0 2-1 2-2Z"/></svg></span> Português
+      </a>
+      <a class="nav-item " style="--i-color:#fda4af; --i-border:rgba(253,164,175,.4)" href="ingles.html">
+        <span class="nav-ico"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4V5Z"/><path d="M8 9h8M8 12h5"/></svg></span> Inglês
+      </a></div><div class="nav-group"><div class="nav-group-label">Exatas</div>
+      <a class="nav-item " style="--i-color:#5eead4; --i-border:rgba(94,234,212,.4)" href="matematica.html">
+        <span class="nav-ico"><svg viewBox="0 0 24 24"><path d="M18 5H6l6 7-6 7h12"/></svg></span> Matemática
+      </a>
+      <a class="nav-item " style="--i-color:#7dd3fc; --i-border:rgba(125,211,252,.4)" href="fisica.html">
+        <span class="nav-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="1.6"/><ellipse cx="12" cy="12" rx="9" ry="3.6"/><ellipse cx="12" cy="12" rx="9" ry="3.6" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="3.6" transform="rotate(120 12 12)"/></svg></span> Física
+      </a>
+      <a class="nav-item " style="--i-color:#c4b5fd; --i-border:rgba(196,181,253,.4)" href="quimica.html">
+        <span class="nav-ico"><svg viewBox="0 0 24 24"><path d="M9 2h6"/><path d="M10 2v6.5L4.5 18a2 2 0 0 0 1.7 3h11.6a2 2 0 0 0 1.7-3L14 8.5V2"/><path d="M7.5 14h9"/></svg></span> Química
+      </a></div><div class="nav-group"><div class="nav-group-label">Biológicas</div>
+      <a class="nav-item " style="--i-color:#86efac; --i-border:rgba(134,239,172,.4)" href="biologia.html">
+        <span class="nav-ico"><svg viewBox="0 0 24 24"><path d="M6 3c0 5 12 5 12 10s-12 5-12 10"/><path d="M18 3c0 5-12 5-12 10s12 5 12 10"/><path d="M7.5 7h9M6.5 12h11M7.5 17h9"/></svg></span> Biologia
+      </a></div><div class="nav-group"><div class="nav-group-label">Humanas</div>
+      <a class="nav-item " style="--i-color:#f0abfc; --i-border:rgba(240,171,252,.4)" href="historia.html">
+        <span class="nav-ico"><svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M4 21V10M20 21V10"/><path d="M2 10l10-6 10 6"/><path d="M8 21v-7M12 21v-7M16 21v-7"/></svg></span> História
+      </a>
+      <a class="nav-item " style="--i-color:#a5b4fc; --i-border:rgba(165,180,252,.4)" href="geografia.html">
+        <span class="nav-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg></span> Geografia
+      </a>
+      <a class="nav-item " style="--i-color:#fca5a5; --i-border:rgba(252,165,165,.4)" href="filosofia.html">
+        <span class="nav-ico"><svg viewBox="0 0 24 24"><path d="M9 3a3 3 0 0 0-3 3v1a3 3 0 0 0-2 2.8v2.4A3 3 0 0 0 6 15v1a3 3 0 0 0 3 3"/><path d="M15 3a3 3 0 0 1 3 3v1a3 3 0 0 1 2 2.8v2.4A3 3 0 0 1 18 15v1a3 3 0 0 1-3 3"/><path d="M9 3v16M15 3v16"/></svg></span> Filosofia
+      </a>
+      <a class="nav-item " style="--i-color:#93c5fd; --i-border:rgba(147,197,253,.4)" href="sociologia.html">
+        <span class="nav-ico"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><circle cx="17.5" cy="9" r="2.6"/><path d="M15 14.2c2.6.4 4.5 2.4 4.5 5.3"/></svg></span> Sociologia
+      </a></div><div class="nav-group"><div class="nav-group-label">Tecnologia</div>
+      <a class="nav-item " style="--i-color:#fbbf24; --i-border:rgba(251,191,36,.4)" href="programacao.html">
+        <span class="nav-ico"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4Z"/><path d="M7.5 9.5 11 12l-3.5 2.5M13 15h4"/></svg></span> Introdução à Programação
+      </a>
+      <a class="nav-item " style="--i-color:#f472b6; --i-border:rgba(244,114,182,.4)" href="autoria-web.html">
+        <span class="nav-ico"><svg viewBox="0 0 24 24"><path d="m9 8-4 4 4 4"/><path d="m15 8 4 4-4 4"/></svg></span> Autoria Web
+      </a></div></aside>
+  <main>
+    <div class="view">
+    <a class="btn ghost back-btn" href="index.html"><svg viewBox="0 0 24 24"><path d="M19 12H5"/><path d="m11 6-6 6 6 6"/></svg> Todas as matérias</a>
+
+    <div class="subject-head">
+      <div class="subject-badge" style="color:#fdba74; border-color:rgba(253,186,116,.4)"><svg viewBox="0 0 24 24"><path d="M4 5c0-1 1-2 2-2h6v18H6c-1 0-2-1-2-2Z"/><path d="M20 5c0-1-1-2-2-2h-6v18h6c1 0 2-1 2-2Z"/></svg></div>
+      <div>
+        <div class="subject-track">Língua Portuguesa</div>
+        <h1>Português</h1>
+      </div>
+    </div>
+
+    <div class="subject-banner">
+      <img src="https://picsum.photos/seed/portugues-livros/900/300" alt="Português" loading="lazy">
+      <div class="banner-text">Gramática, literatura e interpretação de texto</div>
+    </div>
+
+    <p class="subject-intro">Estudo da gramática normativa, da leitura crítica e da produção textual. Base para interpretação de textos em qualquer área do conhecimento e para a redação de vestibulares e concursos.</p>
+
+    <div class="section-label">Conteúdo programático</div>
+    <div class="topics-grid">
+      
+        <div class="topic-card" style="border-left-color:#fdba74">
+          <h4>Gramática Normativa</h4><p>Classes de palavras, sintaxe e concordância.</p>
+        </div>
+        <div class="topic-card" style="border-left-color:#fdba74">
+          <h4>Interpretação de Texto</h4><p>Leitura crítica, inferência e coesão.</p>
+        </div>
+        <div class="topic-card" style="border-left-color:#fdba74">
+          <h4>Literatura Brasileira</h4><p>Do Barroco ao Modernismo e além.</p>
+        </div>
+        <div class="topic-card" style="border-left-color:#fdba74">
+          <h4>Redação Dissertativa</h4><p>Estrutura argumentativa e coesão textual.</p>
+        </div>
+        <div class="topic-card" style="border-left-color:#fdba74">
+          <h4>Figuras de Linguagem</h4><p>Metáfora, metonímia, ironia e mais.</p>
+        </div>
+        <div class="topic-card" style="border-left-color:#fdba74">
+          <h4>Fonética e Fonologia</h4><p>Sons, fonemas e encontros vocálicos.</p>
+        </div>
+    </div>
+
+    
+
+    <div class="section-label">Curiosidades</div>
+    <div class="carousel" id="carousel">
+      <div class="carousel-viewport">
+        <div class="carousel-track" id="c-track">
+          
+            <div class="carousel-card" data-i="0">
+              <div class="cc-index">01 / 03</div>
+              <h4>Origem do idioma</h4><p>O português evoluiu do latim vulgar levado à Península Ibérica pelos romanos há mais de 2 mil anos.</p>
+            </div>
+            <div class="carousel-card" data-i="1">
+              <div class="cc-index">02 / 03</div>
+              <h4>Acordo Ortográfico</h4><p>O Acordo Ortográfico de 1990 unificou regras entre os países de língua portuguesa, com vigência plena no Brasil desde 2016.</p>
+            </div>
+            <div class="carousel-card" data-i="2">
+              <div class="cc-index">03 / 03</div>
+              <h4>Palavra mais longa</h4><p>"Pneumoultramicroscopicossilicovulcanoconiótico" é frequentemente citada como uma das palavras mais longas da língua.</p>
+            </div>
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <button class="btn icon-only" onclick="carouselMove(-1)"><svg viewBox="0 0 24 24"><path d="M19 12H5"/><path d="m11 6-6 6 6 6"/></svg></button>
+        <button class="btn icon-only" onclick="carouselMove(1)"><svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 18 6-6-6-6"/></svg></button>
+        <div class="carousel-dots" id="c-dots">
+          <button class="c-dot" onclick="carouselGo(0)"></button><button class="c-dot" onclick="carouselGo(1)"></button><button class="c-dot" onclick="carouselGo(2)"></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="subject-nav-footer">
+      <a class="btn ghost" href="autoria-web.html"><svg viewBox="0 0 24 24"><path d="M19 12H5"/><path d="m11 6-6 6 6 6"/></svg> Autoria Web</a>
+      <a class="btn primary" href="matematica.html">Matemática <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 18 6-6-6-6"/></svg></a>
+    </div>
+  </div>
+    <footer class="site-footer">VETOR — plataforma de estudos em HTML, CSS e JavaScript. Conteúdo de referência para revisão do ensino médio, lógica de programação e autoria web.</footer>
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
