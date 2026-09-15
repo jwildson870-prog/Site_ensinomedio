@@ -1,0 +1,13 @@
+:root{--subject-color:#5eead4}
+.theme-portugues{--accent:#fb923c;--subject-color:#fb923c}
+.theme-ingles{--accent:#f472b6;--subject-color:#f472b6}
+.theme-matematica{--accent:#22d3ee;--subject-color:#22d3ee}
+.theme-fisica{--accent:#60a5fa;--subject-color:#60a5fa}
+.theme-quimica{--accent:#a78bfa;--subject-color:#a78bfa}
+.theme-biologia{--accent:#4ade80;--subject-color:#4ade80}
+.theme-historia{--accent:#e879f9;--subject-color:#e879f9}
+.theme-geografia{--accent:#818cf8;--subject-color:#818cf8}
+.theme-filosofia{--accent:#fb7185;--subject-color:#fb7185}
+.theme-sociologia{--accent:#38bdf8;--subject-color:#38bdf8}
+.theme-programacao{--accent:#fbbf24;--subject-color:#fbbf24}
+.theme-autoria-web{--accent:#f472b6;--subject-color:#f472b6}
